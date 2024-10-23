@@ -1,3 +1,5 @@
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
@@ -21,9 +23,6 @@ spec:
         name: payment-api
         ports:
         - containerPort: 8080
-        resources: {}
-status: {}
-
 ---
 apiVersion: v1
 kind: Service
